@@ -10,10 +10,20 @@ import UIKit
 
 class SampleTableViewController: UITableViewController {
 
+    var menuTitleArray: NSArray = NSArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier");
+        //https://sites.google.com/a/gclue.jp/swift-docs/
+        self.title = "SWIFT Sample"
+        
+        self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier")
+        
+        menuTitleArray = ["Basic UI",
+            "UIAlertController",
+            "PhotoKit",
+            "SNS"]
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,7 +47,7 @@ class SampleTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 1
+        return  menuTitleArray.count
     }
 
 
@@ -45,7 +55,7 @@ class SampleTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-
+        cell.textLabel.text = menuTitleArray[indexPath.row] as NSString
         return cell
     }
 
