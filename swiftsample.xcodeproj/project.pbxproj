@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA175BAA1A15FA3E00FAEC1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA175BA91A15FA3E00FAEC1B /* Default-568h@2x.png */; };
 		EAB218F21A00994300BD7230 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB218F11A00994300BD7230 /* SampleTableViewController.swift */; };
 		EAFA24311A00969E0063E760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA24301A00969E0063E760 /* AppDelegate.swift */; };
-		EAFA24331A00969E0063E760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA24321A00969E0063E760 /* ViewController.swift */; };
-		EAFA24361A00969E0063E760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFA24341A00969E0063E760 /* Main.storyboard */; };
 		EAFA24381A00969E0063E760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFA24371A00969E0063E760 /* Images.xcassets */; };
-		EAFA243B1A00969E0063E760 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA24391A00969E0063E760 /* LaunchScreen.xib */; };
 		EAFA24471A00969E0063E760 /* swiftsampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA24461A00969E0063E760 /* swiftsampleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA175BA81A15F99A00FAEC1B /* swiftsample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swiftsample-Prefix.pch"; sourceTree = "<group>"; };
+		EA175BA91A15FA3E00FAEC1B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EAB218F11A00994300BD7230 /* SampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		EAFA242B1A00969E0063E760 /* swiftsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA242F1A00969E0063E760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFA24301A00969E0063E760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFA24321A00969E0063E760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAFA24351A00969E0063E760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAFA24371A00969E0063E760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EAFA243A1A00969E0063E760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EAFA24401A00969E0063E760 /* swiftsampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftsampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA24451A00969E0063E760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFA24461A00969E0063E760 /* swiftsampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftsampleTests.swift; sourceTree = "<group>"; };
@@ -61,6 +58,7 @@
 		EAFA24221A00969E0063E760 = {
 			isa = PBXGroup;
 			children = (
+				EA175BA91A15FA3E00FAEC1B /* Default-568h@2x.png */,
 				EAFA242D1A00969E0063E760 /* swiftsample */,
 				EAFA24431A00969E0063E760 /* swiftsampleTests */,
 				EAFA242C1A00969E0063E760 /* Products */,
@@ -80,11 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				EAFA24301A00969E0063E760 /* AppDelegate.swift */,
-				EAFA24321A00969E0063E760 /* ViewController.swift */,
 				EAB218F11A00994300BD7230 /* SampleTableViewController.swift */,
-				EAFA24341A00969E0063E760 /* Main.storyboard */,
 				EAFA24371A00969E0063E760 /* Images.xcassets */,
-				EAFA24391A00969E0063E760 /* LaunchScreen.xib */,
 				EAFA242E1A00969E0063E760 /* Supporting Files */,
 			);
 			path = swiftsample;
@@ -93,6 +88,7 @@
 		EAFA242E1A00969E0063E760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA175BA81A15F99A00FAEC1B /* swiftsample-Prefix.pch */,
 				EAFA242F1A00969E0063E760 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,9 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFA24361A00969E0063E760 /* Main.storyboard in Resources */,
-				EAFA243B1A00969E0063E760 /* LaunchScreen.xib in Resources */,
 				EAFA24381A00969E0063E760 /* Images.xcassets in Resources */,
+				EA175BAA1A15FA3E00FAEC1B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFA24331A00969E0063E760 /* ViewController.swift in Sources */,
 				EAFA24311A00969E0063E760 /* AppDelegate.swift in Sources */,
 				EAB218F21A00994300BD7230 /* SampleTableViewController.swift in Sources */,
 			);
@@ -238,25 +232,6 @@
 			targetProxy = EAFA24411A00969E0063E760 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EAFA24341A00969E0063E760 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFA24351A00969E0063E760 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EAFA24391A00969E0063E760 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFA243A1A00969E0063E760 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EAFA24481A00969E0063E760 /* Debug */ = {
@@ -340,6 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/swiftsample;
 				INFOPLIST_FILE = swiftsample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/swiftsample;
 				INFOPLIST_FILE = swiftsample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
