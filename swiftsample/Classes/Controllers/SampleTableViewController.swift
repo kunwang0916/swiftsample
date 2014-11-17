@@ -59,6 +59,19 @@ class SampleTableViewController: UITableViewController {
         return cell
     }
 
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell?
+        let cellTitle = cell?.textLabel.text
+        println("cell title: \(cellTitle)")
+        
+        if cellTitle == "Basic UI"
+        {
+            self.navigationController?.pushViewController(BasicUIViewController(), animated: true)
+        }
+
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
