@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>swiftsample.xcscheme</key>
+		<key>swift sample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EAFA242A1A00969E0063E760</key>
+		<key>EA301A301A893B4400CA8ADC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAFA243F1A00969E0063E760</key>
+		<key>EA301A451A893B4500CA8ADC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,6 +22,7 @@ class BasicUIViewController: BaseViewController {
         
         // Do any additional setup after loading the view. 
         self.view.backgroundColor = UIColor.whiteColor()
+        self.title = "Basic UI"
         
         self.initSubViews()
     }

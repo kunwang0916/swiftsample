@@ -1,15 +1,15 @@
 //
-//  swiftsampleTests.swift
-//  swiftsampleTests
+//  swift_sampleTests.swift
+//  swift sampleTests
 //
-//  Created by wangkun on 14/10/29.
-//  Copyright (c) 2014年 wangkun. All rights reserved.
+//  Created by wangkun on 15/2/9.
+//  Copyright (c) 2015年 wangkun. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class swiftsampleTests: XCTestCase {
+class swift_sampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

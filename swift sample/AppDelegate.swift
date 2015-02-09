@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  swiftsample
+//  swift sample
 //
-//  Created by wangkun on 14/10/29.
-//  Copyright (c) 2014年 wangkun. All rights reserved.
+//  Created by wangkun on 15/2/9.
+//  Copyright (c) 2015年 wangkun. All rights reserved.
 //
 
 import UIKit
@@ -16,15 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        var navigationController = UINavigationController()
-        var tableViewController = SampleTableViewController()
-        navigationController.pushViewController(tableViewController, animated: true)
-
-        self.window?.rootViewController = navigationController
-
-        self.window?.makeKeyAndVisible()
         return true
     }
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAFA242A1A00969E0063E760"
-               BuildableName = "swiftsample.app"
-               BlueprintName = "swiftsample"
-               ReferencedContainer = "container:swiftsample.xcodeproj">
+               BlueprintIdentifier = "EA301A301A893B4400CA8ADC"
+               BuildableName = "swift sample.app"
+               BlueprintName = "swift sample"
+               ReferencedContainer = "container:swift sample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAFA243F1A00969E0063E760"
-               BuildableName = "swiftsampleTests.xctest"
-               BlueprintName = "swiftsampleTests"
-               ReferencedContainer = "container:swiftsample.xcodeproj">
+               BlueprintIdentifier = "EA301A451A893B4500CA8ADC"
+               BuildableName = "swift sampleTests.xctest"
+               BlueprintName = "swift sampleTests"
+               ReferencedContainer = "container:swift sample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAFA243F1A00969E0063E760"
-               BuildableName = "swiftsampleTests.xctest"
-               BlueprintName = "swiftsampleTests"
-               ReferencedContainer = "container:swiftsample.xcodeproj">
+               BlueprintIdentifier = "EA301A451A893B4500CA8ADC"
+               BuildableName = "swift sampleTests.xctest"
+               BlueprintName = "swift sampleTests"
+               ReferencedContainer = "container:swift sample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAFA242A1A00969E0063E760"
-            BuildableName = "swiftsample.app"
-            BlueprintName = "swiftsample"
-            ReferencedContainer = "container:swiftsample.xcodeproj">
+            BlueprintIdentifier = "EA301A301A893B4400CA8ADC"
+            BuildableName = "swift sample.app"
+            BlueprintName = "swift sample"
+            ReferencedContainer = "container:swift sample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,23 +75,13 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAFA242A1A00969E0063E760"
-            BuildableName = "swiftsample.app"
-            BlueprintName = "swiftsample"
-            ReferencedContainer = "container:swiftsample.xcodeproj">
+            BlueprintIdentifier = "EA301A301A893B4400CA8ADC"
+            BuildableName = "swift sample.app"
+            BlueprintName = "swift sample"
+            ReferencedContainer = "container:swift sample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "DYLD_INSERT_LIBRARIES"
-            value = "/usr/lib/libgmalloc.dylib"
-            isEnabled = "YES">
-         </AdditionalOption>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -103,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAFA242A1A00969E0063E760"
-            BuildableName = "swiftsample.app"
-            BlueprintName = "swiftsample"
-            ReferencedContainer = "container:swiftsample.xcodeproj">
+            BlueprintIdentifier = "EA301A301A893B4400CA8ADC"
+            BuildableName = "swift sample.app"
+            BlueprintName = "swift sample"
+            ReferencedContainer = "container:swift sample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
