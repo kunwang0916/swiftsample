@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0953131A895E4E00B9174A /* SNSViewController.swift */; };
+		EA0953161A895F0000B9174A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0953151A895F0000B9174A /* Social.framework */; };
 		EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA301A361A893B4400CA8ADC /* AppDelegate.swift */; };
 		EA301A3C1A893B4400CA8ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA301A3A1A893B4400CA8ADC /* Main.storyboard */; };
 		EA301A3E1A893B4400CA8ADC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA301A3D1A893B4400CA8ADC /* Images.xcassets */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0953131A895E4E00B9174A /* SNSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSViewController.swift; sourceTree = "<group>"; };
+		EA0953151A895F0000B9174A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		EA301A311A893B4400CA8ADC /* swift sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA301A351A893B4400CA8ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA301A361A893B4400CA8ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0953161A895F0000B9174A /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,7 @@
 		EA301A281A893B4400CA8ADC = {
 			isa = PBXGroup;
 			children = (
+				EA0953151A895F0000B9174A /* Social.framework */,
 				EA301A331A893B4400CA8ADC /* swift sample */,
 				EA301A491A893B4500CA8ADC /* swift sampleTests */,
 				EA301A321A893B4400CA8ADC /* Products */,
@@ -132,6 +138,7 @@
 				EA301A5B1A893E7900CA8ADC /* BaseViewController.swift */,
 				EA301A5C1A893E7900CA8ADC /* BasicUIViewController.swift */,
 				EA301A571A893BC300CA8ADC /* ViewController.swift */,
+				EA0953131A895E4E00B9174A /* SNSViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 				EA301A581A893BC300CA8ADC /* ViewController.swift in Sources */,
 				EA301A601A893E7900CA8ADC /* BasicUIViewController.swift in Sources */,
 				EA301A641A893EFA00CA8ADC /* Util.swift in Sources */,
+				EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */,
 				EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */,
 				EA301A5D1A893E7900CA8ADC /* HttpRequestViewController.swift in Sources */,
 			);
@@ -449,6 +457,7 @@
 				EA301A521A893B4500CA8ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA301A531A893B4500CA8ADC /* Build configuration list for PBXNativeTarget "swift sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +466,7 @@
 				EA301A551A893B4500CA8ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

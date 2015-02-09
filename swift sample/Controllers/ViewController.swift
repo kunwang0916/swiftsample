@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -73,6 +73,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         {
             self.navigationController?.pushViewController(HttpRequestViewController(), animated: true)
         }
+        else if cellTitle == "SNS"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("SNSViewController") as SNSViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+
         
     }
     /*
