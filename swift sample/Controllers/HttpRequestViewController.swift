@@ -42,10 +42,21 @@ class HttpRequestViewController: BaseViewController {
         
         //http request block
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let jsonString = NSString(data: data, encoding: NSUTF8StringEncoding);
-            println(jsonString)
-            //TODO : Need implement json string parsing
-
+            var err: NSError?
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
+            
+            if(err != nil) {
+                println(err!.localizedDescription)
+                let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
+                println("Error could not parse JSON: '\(jsonStr)'")
+            }
+            else {
+                var jsonDic:NSDictionary = json!
+                // output every key&value in json
+                for (jsonKey, jsonValue) in jsonDic{
+                    println("\(jsonKey): \(jsonValue)")
+                }
+            }
             
         }
         
