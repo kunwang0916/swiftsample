@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="694" y="344"/>
         </scene>
-        <!--View Controller-->
+        <!--SNS-->
         <scene sceneID="nUu-qq-rOw">
             <objects>
-                <viewController storyboardIdentifier="SNSViewController" id="WmB-8s-dcK" customClass="SNSViewController" customModule="swift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SNSViewController" title="SNS" id="WmB-8s-dcK" customClass="SNSViewController" customModule="swift_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aKx-lS-Abf"/>
                         <viewControllerLayoutGuide type="bottom" id="hAj-lN-Ezt"/>
@@ -72,7 +72,7 @@
                             <constraint firstItem="lTa-3H-RG4" firstAttribute="width" secondItem="Fj7-dY-T9h" secondAttribute="width" id="X5X-s6-FPZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hOw-TO-cWq"/>
+                    <navigationItem key="navigationItem" title="SNS" id="hOw-TO-cWq"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="snsTableView" destination="lTa-3H-RG4" id="79f-7X-A1A"/>
@@ -99,6 +99,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gI-Ap-Kfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="344"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="kJr-Zl-rPm">
+            <objects>
+                <viewController storyboardIdentifier="PhotoKitViewController" title="Photos" id="eWo-Iw-hGt" customClass="PhotoKitViewController" customModule="swift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UAn-wa-XVM"/>
+                        <viewControllerLayoutGuide type="bottom" id="WCK-ki-YVK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L4I-8D-eFm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPL-3l-fvc">
+                                <rect key="frame" x="107" y="84" width="107" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Pick a photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoButtonClicked:" destination="eWo-Iw-hGt" eventType="touchUpInside" id="p39-YR-xhB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFQ-sw-2ac">
+                                <rect key="frame" x="40" y="127" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photos" id="fuo-xn-KG3"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="JFQ-sw-2ac" id="4Qt-T0-T5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yly-uZ-2Gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="975"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

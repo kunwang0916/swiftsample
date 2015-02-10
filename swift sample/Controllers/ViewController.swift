@@ -73,6 +73,14 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         {
             self.navigationController?.pushViewController(HttpRequestViewController(), animated: true)
         }
+        else if cellTitle == "PhotoKit"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("PhotoKitViewController") as PhotoKitViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         else if cellTitle == "SNS"
         {
             //init view controller from main.storyboard
@@ -81,8 +89,6 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
-        
     }
     /*
     // Override to support conditional editing of the table view.
