@@ -28,6 +28,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             "SNS",
             "Touch ID",
             "Text to speech API",
+            "UIDynamic Animation",
             "Manual Camera Controls",
             "HealthKit",
             "Handoff"]
@@ -107,6 +108,14 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             //init view controller from main.storyboard
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("TextSpeechViewController") as TextSpeechViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "UIDynamic Animation"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("DynamicAnimationViewController") as DynamicAnimationViewController
             
             self.navigationController?.pushViewController(vc, animated: true)
         }

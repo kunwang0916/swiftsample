@@ -23,6 +23,8 @@
 		EAC719C61A9D3EA000BA7C5F /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */; };
 		EAC719C91A9D415300BA7C5F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */; };
 		EAC719CB1A9D491E00BA7C5F /* TextSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */; };
+		EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */; };
+		EAC719D01A9D7CDA00BA7C5F /* DynamicAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 		EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeechViewController.swift; sourceTree = "<group>"; };
+		EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationViewController.swift; sourceTree = "<group>"; };
+		EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		EA301A331A893B4400CA8ADC /* swift sample */ = {
 			isa = PBXGroup;
 			children = (
+				EAC719CE1A9D73A700BA7C5F /* Views */,
 				EAC719C71A9D414200BA7C5F /* Franeworks */,
 				EA301A621A893EFA00CA8ADC /* Util */,
 				EA301A611A893EA600CA8ADC /* Libraries */,
@@ -148,6 +153,7 @@
 				EA0953131A895E4E00B9174A /* SNSViewController.swift */,
 				EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */,
 				EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */,
+				EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				EA0953151A895F0000B9174A /* Social.framework */,
 			);
 			name = Franeworks;
+			sourceTree = "<group>";
+		};
+		EAC719CE1A9D73A700BA7C5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA301A5F1A893E7900CA8ADC /* BaseViewController.swift in Sources */,
+				EAC719D01A9D7CDA00BA7C5F /* DynamicAnimationView.swift in Sources */,
 				EAC719C61A9D3EA000BA7C5F /* TouchIDViewController.swift in Sources */,
 				EA301A5E1A893E7900CA8ADC /* PhotoKitViewController.swift in Sources */,
 				EAC719CB1A9D491E00BA7C5F /* TextSpeechViewController.swift in Sources */,
@@ -286,6 +301,7 @@
 				EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */,
 				EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */,
 				EA301A5D1A893E7900CA8ADC /* HttpRequestViewController.swift in Sources */,
+				EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
