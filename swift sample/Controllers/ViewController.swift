@@ -25,7 +25,12 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         menuTitleArray = ["Basic UI",
             "HTTP Request",
             "PhotoKit",
-            "SNS"]
+            "SNS",
+            "Touch ID",
+            "Text to speech API",
+            "Manual Camera Controls",
+            "HealthKit",
+            "Handoff"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -88,6 +93,26 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             let vc = storyboard.instantiateViewControllerWithIdentifier("SNSViewController") as SNSViewController
             
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "Touch ID"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TouchIDViewController") as TouchIDViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "Text to speech API"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TextSpeechViewController") as TextSpeechViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else
+        {
+            self.showSimpleAlertView("Sorry", AndMessage: "this part is under developnig.")
         }
     }
     /*
