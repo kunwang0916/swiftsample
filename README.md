@@ -11,6 +11,7 @@ a project to make demo in xcode 6 in swift language.
 * SNS
 * Touch ID
 * Text To Speech
+* UIDynamicAnimation
 
 ## ToDo functions
 * Manual Camera Controls

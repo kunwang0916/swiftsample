@@ -20,7 +20,8 @@ class DynamicAnimationViewController: BaseViewController, UITableViewDelegate, U
         animationArray = [
             "UIGravityBehavior",
         "UISnapBehavior",
-        "UIPushBehavior",]
+        "UIPushBehavior",
+        "UIAttachmentBehavior"]
         
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier")
         animationView = DynamicAnimationView(frame: CGRectMake(20, 20, 100, 100))
@@ -67,6 +68,10 @@ class DynamicAnimationViewController: BaseViewController, UITableViewDelegate, U
         else if cellTitle == "UISnapBehavior"
         {
             animationView?.snapAnimation()
+        }
+        else if cellTitle == "UIAttachmentBehavior"
+        {
+            animationView?.attachmentAnimaiton()
         }
     }
 }

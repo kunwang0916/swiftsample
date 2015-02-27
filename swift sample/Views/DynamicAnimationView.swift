@@ -83,6 +83,22 @@ class DynamicAnimationView: UIView, UIDynamicAnimatorDelegate{
         self.animator?.addBehavior(itemBehavior)
     }
     
+    func attachmentAnimaiton(){
+
+        self.resetAnimator()
+        
+        var attachmentPoint = self.center
+        attachmentPoint.y += 200
+        
+        var attachementBehavior = UIAttachmentBehavior(item: self, attachedToAnchor: attachmentPoint)
+        attachementBehavior.length = 50;
+        attachementBehavior.damping = 0.5;
+        attachementBehavior.frequency = 1;
+        
+        self.animator?.addBehavior(attachementBehavior)
+    }
+
+    
     func resetAnimator(){
         self.hidden = false;
         //reset
