@@ -119,6 +119,15 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        else if cellTitle == "HealthKit"
+        {
+            //init view controller from main.storyboard
+            //NOTICE : To enable HealthKit, you need to add Apple id account that is enrolled in a Developer Program
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HealthKitViewController") as HealthKitViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         else
         {
             self.showSimpleAlertView("Sorry", AndMessage: "this part is under developnig.")

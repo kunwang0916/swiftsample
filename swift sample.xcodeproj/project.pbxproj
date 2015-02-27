@@ -25,6 +25,8 @@
 		EAC719CB1A9D491E00BA7C5F /* TextSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */; };
 		EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */; };
 		EAC719D01A9D7CDA00BA7C5F /* DynamicAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */; };
+		EADB01CC1AA03DC9004001D3 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */; };
+		EADB01CE1AA03FD7004001D3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADB01CD1AA03FD7004001D3 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeechViewController.swift; sourceTree = "<group>"; };
 		EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationViewController.swift; sourceTree = "<group>"; };
 		EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationView.swift; sourceTree = "<group>"; };
+		EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
+		EADB01CD1AA03FD7004001D3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EADB01CE1AA03FD7004001D3 /* HealthKit.framework in Frameworks */,
 				EAC719C91A9D415300BA7C5F /* LocalAuthentication.framework in Frameworks */,
 				EA0953161A895F0000B9174A /* Social.framework in Frameworks */,
 			);
@@ -154,6 +159,7 @@
 				EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */,
 				EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */,
 				EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */,
+				EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 		EAC719C71A9D414200BA7C5F /* Franeworks */ = {
 			isa = PBXGroup;
 			children = (
+				EADB01CD1AA03FD7004001D3 /* HealthKit.framework */,
 				EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */,
 				EA0953151A895F0000B9174A /* Social.framework */,
 			);
@@ -300,6 +307,7 @@
 				EA301A641A893EFA00CA8ADC /* Util.swift in Sources */,
 				EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */,
 				EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */,
+				EADB01CC1AA03DC9004001D3 /* HealthKitViewController.swift in Sources */,
 				EA301A5D1A893E7900CA8ADC /* HttpRequestViewController.swift in Sources */,
 				EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */,
 			);
