@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0953131A895E4E00B9174A /* SNSViewController.swift */; };
-		EA0953161A895F0000B9174A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0953151A895F0000B9174A /* Social.framework */; };
+		EA0953161A895F0000B9174A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0953151A895F0000B9174A /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA301A361A893B4400CA8ADC /* AppDelegate.swift */; };
 		EA301A3C1A893B4400CA8ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA301A3A1A893B4400CA8ADC /* Main.storyboard */; };
 		EA301A3E1A893B4400CA8ADC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA301A3D1A893B4400CA8ADC /* Images.xcassets */; };
@@ -20,6 +20,13 @@
 		EA301A5F1A893E7900CA8ADC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA301A5B1A893E7900CA8ADC /* BaseViewController.swift */; };
 		EA301A601A893E7900CA8ADC /* BasicUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA301A5C1A893E7900CA8ADC /* BasicUIViewController.swift */; };
 		EA301A641A893EFA00CA8ADC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA301A631A893EFA00CA8ADC /* Util.swift */; };
+		EAC719C61A9D3EA000BA7C5F /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */; };
+		EAC719C91A9D415300BA7C5F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */; };
+		EAC719CB1A9D491E00BA7C5F /* TextSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */; };
+		EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */; };
+		EAC719D01A9D7CDA00BA7C5F /* DynamicAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */; };
+		EADB01CC1AA03DC9004001D3 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */; };
+		EADB01CE1AA03FD7004001D3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADB01CD1AA03FD7004001D3 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,13 @@
 		EA301A5B1A893E7900CA8ADC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA301A5C1A893E7900CA8ADC /* BasicUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicUIViewController.swift; sourceTree = "<group>"; };
 		EA301A631A893EFA00CA8ADC /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSpeechViewController.swift; sourceTree = "<group>"; };
+		EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationViewController.swift; sourceTree = "<group>"; };
+		EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimationView.swift; sourceTree = "<group>"; };
+		EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
+		EADB01CD1AA03FD7004001D3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EADB01CE1AA03FD7004001D3 /* HealthKit.framework in Frameworks */,
+				EAC719C91A9D415300BA7C5F /* LocalAuthentication.framework in Frameworks */,
 				EA0953161A895F0000B9174A /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +90,6 @@
 		EA301A281A893B4400CA8ADC = {
 			isa = PBXGroup;
 			children = (
-				EA0953151A895F0000B9174A /* Social.framework */,
 				EA301A331A893B4400CA8ADC /* swift sample */,
 				EA301A491A893B4500CA8ADC /* swift sampleTests */,
 				EA301A321A893B4400CA8ADC /* Products */,
@@ -93,6 +108,8 @@
 		EA301A331A893B4400CA8ADC /* swift sample */ = {
 			isa = PBXGroup;
 			children = (
+				EAC719CE1A9D73A700BA7C5F /* Views */,
+				EAC719C71A9D414200BA7C5F /* Franeworks */,
 				EA301A621A893EFA00CA8ADC /* Util */,
 				EA301A611A893EA600CA8ADC /* Libraries */,
 				EA301A561A893BC300CA8ADC /* Controllers */,
@@ -133,12 +150,16 @@
 		EA301A561A893BC300CA8ADC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA301A571A893BC300CA8ADC /* ViewController.swift */,
 				EA301A591A893E7900CA8ADC /* HttpRequestViewController.swift */,
 				EA301A5A1A893E7900CA8ADC /* PhotoKitViewController.swift */,
 				EA301A5B1A893E7900CA8ADC /* BaseViewController.swift */,
 				EA301A5C1A893E7900CA8ADC /* BasicUIViewController.swift */,
-				EA301A571A893BC300CA8ADC /* ViewController.swift */,
 				EA0953131A895E4E00B9174A /* SNSViewController.swift */,
+				EAC719C51A9D3EA000BA7C5F /* TouchIDViewController.swift */,
+				EAC719CA1A9D491E00BA7C5F /* TextSpeechViewController.swift */,
+				EAC719CC1A9D738D00BA7C5F /* DynamicAnimationViewController.swift */,
+				EADB01CB1AA03DC9004001D3 /* HealthKitViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,6 +177,24 @@
 				EA301A631A893EFA00CA8ADC /* Util.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EAC719C71A9D414200BA7C5F /* Franeworks */ = {
+			isa = PBXGroup;
+			children = (
+				EADB01CD1AA03FD7004001D3 /* HealthKit.framework */,
+				EAC719C81A9D415300BA7C5F /* LocalAuthentication.framework */,
+				EA0953151A895F0000B9174A /* Social.framework */,
+			);
+			name = Franeworks;
+			sourceTree = "<group>";
+		};
+		EAC719CE1A9D73A700BA7C5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAC719CF1A9D7CDA00BA7C5F /* DynamicAnimationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,13 +298,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA301A5F1A893E7900CA8ADC /* BaseViewController.swift in Sources */,
+				EAC719D01A9D7CDA00BA7C5F /* DynamicAnimationView.swift in Sources */,
+				EAC719C61A9D3EA000BA7C5F /* TouchIDViewController.swift in Sources */,
 				EA301A5E1A893E7900CA8ADC /* PhotoKitViewController.swift in Sources */,
+				EAC719CB1A9D491E00BA7C5F /* TextSpeechViewController.swift in Sources */,
 				EA301A581A893BC300CA8ADC /* ViewController.swift in Sources */,
 				EA301A601A893E7900CA8ADC /* BasicUIViewController.swift in Sources */,
 				EA301A641A893EFA00CA8ADC /* Util.swift in Sources */,
 				EA0953141A895E4E00B9174A /* SNSViewController.swift in Sources */,
 				EA301A371A893B4400CA8ADC /* AppDelegate.swift in Sources */,
+				EADB01CC1AA03DC9004001D3 /* HealthKitViewController.swift in Sources */,
 				EA301A5D1A893E7900CA8ADC /* HttpRequestViewController.swift in Sources */,
+				EAC719CD1A9D738D00BA7C5F /* DynamicAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = "swift sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = "swift sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

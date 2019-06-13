@@ -25,7 +25,13 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         menuTitleArray = ["Basic UI",
             "HTTP Request",
             "PhotoKit",
-            "SNS"]
+            "SNS",
+            "Touch ID",
+            "Text to speech API",
+            "UIDynamic Animation",
+            "Manual Camera Controls",
+            "HealthKit",
+            "Handoff"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,6 +79,14 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         {
             self.navigationController?.pushViewController(HttpRequestViewController(), animated: true)
         }
+        else if cellTitle == "PhotoKit"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("PhotoKitViewController") as PhotoKitViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         else if cellTitle == "SNS"
         {
             //init view controller from main.storyboard
@@ -81,8 +95,43 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
-        
+        else if cellTitle == "Touch ID"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TouchIDViewController") as TouchIDViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "Text to speech API"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TextSpeechViewController") as TextSpeechViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "UIDynamic Animation"
+        {
+            //init view controller from main.storyboard
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("DynamicAnimationViewController") as DynamicAnimationViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if cellTitle == "HealthKit"
+        {
+            //init view controller from main.storyboard
+            //NOTICE : To enable HealthKit, you need to add Apple id account that is enrolled in a Developer Program
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HealthKitViewController") as HealthKitViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else
+        {
+            self.showSimpleAlertView("Sorry", AndMessage: "this part is under developnig.")
+        }
     }
     /*
     // Override to support conditional editing of the table view.
