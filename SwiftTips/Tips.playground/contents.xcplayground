@@ -3,5 +3,6 @@
     <pages>
         <page name='MethodSwizzling'/>
         <page name='URLSession'/>
+        <page name='AssociatedObject'/>
     </pages>
 </playground>
