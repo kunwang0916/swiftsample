@@ -34,12 +34,12 @@ class HoriTableViewController: UIViewController {
 
 extension HoriTableViewController: HoriViewDataSource {
     func horiView(_ horiView: HoriTableView, numOfColsInSection section: Int) -> Int {
-        return 10
+        return 1000
     }
     
     func horiView(_ horiView: HoriTableView, cellForColAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "hello"
+        cell.textLabel?.text = "Hello \(indexPath.row)"
         return cell
     }
 }
