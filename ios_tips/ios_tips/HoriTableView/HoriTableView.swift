@@ -81,6 +81,20 @@ class HoriTableView: UIScrollView {
         return rect
     }
     
+    
+    func dequeueReusableCellWithIdentifier(_ identifier: String) -> UITableViewCell? {
+        for cell in self._reusableCells {
+            if cell.reuseIdentifier == identifier {
+                // avoid de-alloc
+                let c = cell
+                self._reusableCells.remove(c)
+                c.prepareForReuse()
+                return c
+            }
+        }
+        return nil
+    }
+    
     override func layoutSubviews() {
         self._layoutTableView()
         super.layoutSubviews()
@@ -88,7 +102,11 @@ class HoriTableView: UIScrollView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .green
+        self.showsHorizontalScrollIndicator = true
+        self.alwaysBounceHorizontal = true
+        
+        self.showsVerticalScrollIndicator = false
+        self.alwaysBounceVertical = false
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct Const {
+    static let cellIdentifier = "cell"
+}
+
 class HoriTableViewController: UIViewController {
     weak var horiView: HoriTableView?
     
@@ -38,7 +42,7 @@ extension HoriTableViewController: HoriViewDataSource {
     }
     
     func horiView(_ horiView: HoriTableView, cellForColAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = horiView.dequeueReusableCellWithIdentifier(Const.cellIdentifier) ?? UITableViewCell(style: .default, reuseIdentifier: Const.cellIdentifier)
         cell.textLabel?.text = "Hello \(indexPath.row)"
         return cell
     }
