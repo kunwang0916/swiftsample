@@ -15,6 +15,7 @@
 		717EAAC122B62CCA004A35D3 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAC022B62CCA004A35D3 /* MenuTableViewController.swift */; };
 		717EAAC522B62EC9004A35D3 /* HoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAC422B62EC9004A35D3 /* HoriTableViewController.swift */; };
 		717EAADA22B8B645004A35D3 /* DragDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAD922B8B645004A35D3 /* DragDropViewController.swift */; };
+		717EAADF22B8C37A004A35D3 /* DIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAADE22B8C37A004A35D3 /* DIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		717EAAC022B62CCA004A35D3 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		717EAAC422B62EC9004A35D3 /* HoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriTableViewController.swift; sourceTree = "<group>"; };
 		717EAAD922B8B645004A35D3 /* DragDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropViewController.swift; sourceTree = "<group>"; };
+		717EAADE22B8C37A004A35D3 /* DIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		717EAA9B22B5F456004A35D3 /* ios_tips */ = {
 			isa = PBXGroup;
 			children = (
+				717EAADD22B8C35F004A35D3 /* DropInteraction */,
 				717EAAD822B8B62B004A35D3 /* DragDrop */,
 				717EAABD22B62A5A004A35D3 /* HoriTableView */,
 				717EAA9C22B5F456004A35D3 /* AppDelegate.swift */,
@@ -116,6 +119,14 @@
 				717EAAD922B8B645004A35D3 /* DragDropViewController.swift */,
 			);
 			path = DragDrop;
+			sourceTree = "<group>";
+		};
+		717EAADD22B8C35F004A35D3 /* DropInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				717EAADE22B8C37A004A35D3 /* DIViewController.swift */,
+			);
+			path = DropInteraction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				717EAAC522B62EC9004A35D3 /* HoriTableViewController.swift in Sources */,
 				717EAABF22B62A86004A35D3 /* HoriTableView.swift in Sources */,
 				717EAA9D22B5F456004A35D3 /* AppDelegate.swift in Sources */,
+				717EAADF22B8C37A004A35D3 /* DIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
