@@ -14,6 +14,7 @@
 		717EAABF22B62A86004A35D3 /* HoriTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAABE22B62A86004A35D3 /* HoriTableView.swift */; };
 		717EAAC122B62CCA004A35D3 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAC022B62CCA004A35D3 /* MenuTableViewController.swift */; };
 		717EAAC522B62EC9004A35D3 /* HoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAC422B62EC9004A35D3 /* HoriTableViewController.swift */; };
+		717EAADA22B8B645004A35D3 /* DragDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAAD922B8B645004A35D3 /* DragDropViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		717EAABE22B62A86004A35D3 /* HoriTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriTableView.swift; sourceTree = "<group>"; };
 		717EAAC022B62CCA004A35D3 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		717EAAC422B62EC9004A35D3 /* HoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriTableViewController.swift; sourceTree = "<group>"; };
+		717EAAD922B8B645004A35D3 /* DragDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		717EAA9B22B5F456004A35D3 /* ios_tips */ = {
 			isa = PBXGroup;
 			children = (
+				717EAAD822B8B62B004A35D3 /* DragDrop */,
 				717EAABD22B62A5A004A35D3 /* HoriTableView */,
 				717EAA9C22B5F456004A35D3 /* AppDelegate.swift */,
 				717EAAC022B62CCA004A35D3 /* MenuTableViewController.swift */,
@@ -105,6 +108,14 @@
 				717EAAC422B62EC9004A35D3 /* HoriTableViewController.swift */,
 			);
 			path = HoriTableView;
+			sourceTree = "<group>";
+		};
+		717EAAD822B8B62B004A35D3 /* DragDrop */ = {
+			isa = PBXGroup;
+			children = (
+				717EAAD922B8B645004A35D3 /* DragDropViewController.swift */,
+			);
+			path = DragDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717EAADA22B8B645004A35D3 /* DragDropViewController.swift in Sources */,
 				717EAAC122B62CCA004A35D3 /* MenuTableViewController.swift in Sources */,
 				717EAAC522B62EC9004A35D3 /* HoriTableViewController.swift in Sources */,
 				717EAABF22B62A86004A35D3 /* HoriTableView.swift in Sources */,
