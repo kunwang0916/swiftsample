@@ -14,17 +14,37 @@ class NFViewController: UIViewController {
         super.viewDidLoad()
         
         // won't get
-        self.sendNotification()
+        self.sendNotification(.Notification1)
         
-        self.registerForNotification();
+        self.registerForNotification(.Notification1);
         
         // will get
-        self.sendNotification()
+        self.sendNotification(.Notification1)
         
-        self.unregisterForNotification()
+        //  won't get
+        self.sendNotification(.Notification2)
+        
+        self.registerForNotification(.Notification2);
+        
+        // will get
+        self.sendNotification(.Notification1)
+        
+        //  will get
+        self.sendNotification(.Notification2)
+        
+        self.unregisterForNotification(.Notification1);
         
         // won't get
-        self.sendNotification()
+        self.sendNotification(.Notification1)
+        //  will get
+        self.sendNotification(.Notification2)
+        
+        self.unregisterForNotification(.Notification2);
+        
+        // won't get
+        self.sendNotification(.Notification1)
+        //  won't get
+        self.sendNotification(.Notification2)
     }
 
     
@@ -32,16 +52,16 @@ class NFViewController: UIViewController {
         print("notifiCallBack")
     }
     
-    func registerForNotification() {
-        WKNotificationCenter.center.addObserver(forName: .Notifcation1, object: self, selector: #selector(notifiCallBack))
+    func registerForNotification(_ name: WKNotification.Name) {
+        WKNotificationCenter.center.addObserver(forName: name, object: self, selector: #selector(notifiCallBack))
     }
     
-    func unregisterForNotification() {
-        WKNotificationCenter.center.removeObserver(self)
+    func unregisterForNotification(_ name: WKNotification.Name) {
+        WKNotificationCenter.center.removeObserver(self, name)
     }
     
-    func sendNotification() {
-        let noti = WKNotification(name: .Notifcation1, object: nil, userInfo: nil)
+    func sendNotification(_ name: WKNotification.Name) {
+        let noti = WKNotification(name: name, object: nil, userInfo: nil)
         WKNotificationCenter.center.post(noti)
     }
 

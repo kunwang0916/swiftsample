@@ -14,7 +14,8 @@ struct  WKNotification {
     let userInfo: [AnyHashable : Any]?
     
     enum Name {
-        case Notifcation1
+        case Notification1
+        case Notification2
     }
 }
 
@@ -30,10 +31,8 @@ class WKNotificationCenter: NSObject {
     var observers = [WKNotificationObserver]()
     
     
-    func removeObserver(_ observer: NSObject) {
-        self.observers.removeAll { ( no : WKNotificationObserver) -> Bool in
-            return  no.obj == observer
-        }
+    func removeObserver(_ observer: NSObject, _ name: WKNotification.Name ) {
+        self.observers.removeAll(where: { observer.isEqual($0.obj) && name == $0.notificationName })
     }
 
     func post(_ notification: WKNotification) {
