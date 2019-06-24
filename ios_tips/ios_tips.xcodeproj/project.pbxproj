@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7162FFCC22BB5A2A00DF1FB9 /* WKNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162FFCB22BB5A2A00DF1FB9 /* WKNotificationCenter.swift */; };
 		7162FFCE22BBF45100DF1FB9 /* NFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162FFCD22BBF45100DF1FB9 /* NFViewController.swift */; };
+		7162FFD322C0207A00DF1FB9 /* UIImageCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162FFD222C0207A00DF1FB9 /* UIImageCacheViewController.swift */; };
+		7162FFD522C0209600DF1FB9 /* WKWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162FFD422C0209600DF1FB9 /* WKWebImage.swift */; };
 		717EAA9D22B5F456004A35D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EAA9C22B5F456004A35D3 /* AppDelegate.swift */; };
 		717EAAA422B5F456004A35D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717EAAA322B5F456004A35D3 /* Assets.xcassets */; };
 		717EAAA722B5F456004A35D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717EAAA522B5F456004A35D3 /* LaunchScreen.storyboard */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		7162FFCB22BB5A2A00DF1FB9 /* WKNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKNotificationCenter.swift; sourceTree = "<group>"; };
 		7162FFCD22BBF45100DF1FB9 /* NFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFViewController.swift; sourceTree = "<group>"; };
+		7162FFD222C0207A00DF1FB9 /* UIImageCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageCacheViewController.swift; sourceTree = "<group>"; };
+		7162FFD422C0209600DF1FB9 /* WKWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebImage.swift; sourceTree = "<group>"; };
 		717EAA9922B5F456004A35D3 /* ios_tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		717EAA9C22B5F456004A35D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		717EAAA322B5F456004A35D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 			path = NotificationCenter;
 			sourceTree = "<group>";
 		};
+		7162FFD122C0205000DF1FB9 /* UIImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				7162FFD222C0207A00DF1FB9 /* UIImageCacheViewController.swift */,
+				7162FFD422C0209600DF1FB9 /* WKWebImage.swift */,
+			);
+			path = UIImageCache;
+			sourceTree = "<group>";
+		};
 		717EAA9022B5F456004A35D3 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 		717EAA9B22B5F456004A35D3 /* ios_tips */ = {
 			isa = PBXGroup;
 			children = (
+				7162FFD122C0205000DF1FB9 /* UIImageCache */,
 				7162FFCA22BB5A0300DF1FB9 /* NotificationCenter */,
 				717EAADD22B8C35F004A35D3 /* DropInteraction */,
 				717EAAD822B8B62B004A35D3 /* DragDrop */,
@@ -245,11 +259,13 @@
 			files = (
 				717EAADA22B8B645004A35D3 /* DragDropViewController.swift in Sources */,
 				717EAAC122B62CCA004A35D3 /* MenuTableViewController.swift in Sources */,
+				7162FFD522C0209600DF1FB9 /* WKWebImage.swift in Sources */,
 				717EAAC522B62EC9004A35D3 /* HoriTableViewController.swift in Sources */,
 				717EAABF22B62A86004A35D3 /* HoriTableView.swift in Sources */,
 				7162FFCE22BBF45100DF1FB9 /* NFViewController.swift in Sources */,
 				717EAA9D22B5F456004A35D3 /* AppDelegate.swift in Sources */,
 				7162FFCC22BB5A2A00DF1FB9 /* WKNotificationCenter.swift in Sources */,
+				7162FFD322C0207A00DF1FB9 /* UIImageCacheViewController.swift in Sources */,
 				717EAADF22B8C37A004A35D3 /* DIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

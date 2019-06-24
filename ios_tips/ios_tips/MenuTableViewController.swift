@@ -10,7 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
     
-    let menuArray = ["HoriTableView", "Drag & Drop", "UIDropInteraction", "Notification"]
+    let menuArray = ["HoriTableView", "Drag & Drop", "UIDropInteraction", "Notification", "Image Cache"]
     let cellId = "reuseIdentifier"
 
     override func viewDidLoad() {
@@ -99,6 +99,7 @@ extension MenuTableViewController {
             case 1: self.openDragDropViewPage()
             case 2: self.openDIViewPage()
             case 3: self.openNotificationPage()
+            case 4: self.openImageCachePage()
             default: self.openHoriTableViewPage()
         }
     }
@@ -117,5 +118,9 @@ extension MenuTableViewController {
     
     func openNotificationPage() {
         self.navigationController?.pushViewController(NFViewController(), animated: false)
+    }
+    
+    func openImageCachePage() {
+        self.navigationController?.pushViewController(UIImageCacheViewController(), animated: false)
     }
 }
