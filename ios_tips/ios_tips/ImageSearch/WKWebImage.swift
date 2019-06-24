@@ -20,16 +20,17 @@ class WKWebImageManager: NSObject {
     // LRU order
     var cacheQueue:[URL] = []
     let sizeLimitition = 10
+    var lock = NSLock()
     
     func downloadImage(_ url: URL, completionHandler: @escaping WKCompletionBlock) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             guard let imgData = data,
                 let image = UIImage(data: imgData) else {
                 completionHandler(nil, error)
                 return
             }
             
-            self.updateLRUQueue(url, image)
+            self?.updateLRUQueue(url, image)
             completionHandler(image, nil)
         }.resume()
     }
@@ -47,6 +48,8 @@ class WKWebImageManager: NSObject {
     }
     
     func updateLRUQueue(_ url: URL, _ image: UIImage) {
+        self.lock.lock()
+        
         self.imageCache[url] = image
         self.cacheQueue = self.cacheQueue.filter({ (elementUrl: URL) -> Bool in
             return elementUrl != url
@@ -58,21 +61,7 @@ class WKWebImageManager: NSObject {
             let url = self.cacheQueue.removeFirst()
             self.imageCache.removeValue(forKey: url)
         }
-    }
-}
-
-extension UIImageView {
-    func wk_setImage(with url: URL) {
-        self.contentMode = .scaleAspectFit
-        WKWebImageManager.shared.imageForUrl(url, completionHandler: { [weak self] (img: UIImage?, err: Error?) -> Void in
-            if let img = img {
-                // key point: don't forget change UI in main thread
-                DispatchQueue.main.async {
-                    self?.image = img
-                }
-            } else if let err = err {
-                print(err)
-            }
-        })
+        
+        self.lock.unlock()
     }
 }
