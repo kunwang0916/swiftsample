@@ -16,52 +16,71 @@ typealias WKCompletionBlock = (UIImage?, Error?) -> Void
 class WKWebImageManager: NSObject {
     static let shared = WKWebImageManager()
     // cached image
-    var imageCache:[URL: UIImage] = [:]
+    let cache = NSCache<NSURL, UIImage>()
+    // avoid multiple load for same url
+    var callBackMap = [URL:[WKCompletionBlock]]()
     // LRU order
     var cacheQueue:[URL] = []
     let sizeLimitition = 10
     var lock = NSLock()
     
-    func downloadImage(_ url: URL, completionHandler: @escaping WKCompletionBlock) {
+    func downloadImage(_ url: URL, completion: @escaping WKCompletionBlock) {
+        lock.lock()
+        var callBackList = callBackMap[url] ?? []
+        callBackList.append(completion)
+        callBackMap[url] = callBackList
+        if callBackList.count > 1 {
+            print("add to pending list:", url.absoluteString)
+            return
+        }
+        lock.unlock()
+        
         URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             guard let imgData = data,
                 let image = UIImage(data: imgData) else {
-                completionHandler(nil, error)
+                completion(nil, error)
                 return
             }
             
             self?.updateLRUQueue(url, image)
-            completionHandler(image, nil)
+            if let callBackList = self?.callBackMap.removeValue(forKey: url) {
+                for cb in callBackList {
+                    cb(image, nil)
+                }
+            }
+            
         }.resume()
     }
     
-    func imageForUrl(_ url: URL, completionHandler: @escaping WKCompletionBlock) {
+    func imageForUrl(_ url: URL, completion: @escaping WKCompletionBlock) {
         // use cached image if available
-        if let img = self.imageCache[url] {
-            self.updateLRUQueue(url, img)
-            completionHandler(img, nil)
+        if let img = cache.object(forKey: url as NSURL) {
+            print("hit cache:", url.absoluteString)
+            updateLRUQueue(url, img)
+            completion(img, nil)
             return
         }
         
         // download if cache not existing
-        self.downloadImage(url, completionHandler: completionHandler)
+        downloadImage(url, completion: completion)
     }
     
     func updateLRUQueue(_ url: URL, _ image: UIImage) {
-        self.lock.lock()
+        lock.lock()
         
-        self.imageCache[url] = image
-        self.cacheQueue = self.cacheQueue.filter({ (elementUrl: URL) -> Bool in
+        cache.setObject(image, forKey: url as NSURL)
+        
+        cacheQueue = cacheQueue.filter({ (elementUrl: URL) -> Bool in
             return elementUrl != url
         })
         
-        self.cacheQueue.append(url)
+        cacheQueue.append(url)
         // keep LRU cache size
-        while self.cacheQueue.count > self.sizeLimitition {
-            let url = self.cacheQueue.removeFirst()
-            self.imageCache.removeValue(forKey: url)
+        while cacheQueue.count > sizeLimitition {
+            let url = cacheQueue.removeFirst()
+            cache.removeObject(forKey: url as NSURL)
         }
         
-        self.lock.unlock()
+        lock.unlock()
     }
 }

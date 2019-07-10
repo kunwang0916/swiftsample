@@ -17,12 +17,13 @@ class WKImageCacheCell: UICollectionViewCell {
         iv.layer.masksToBounds = true
         iv.layer.cornerRadius = 10.0
         iv.layer.borderWidth = 2.0
+        iv.contentMode = .scaleAspectFit
         return iv
     }()
     
     var viewModel: ImageSearchViewModel! {
         didSet {
-            self.imageView.wk_setImage(with: viewModel.url)
+            self.imageView.imageURL = viewModel.url
         }
     }
     
